@@ -66,13 +66,13 @@ chromeos-apk com.soundcloud.android.apk --tablet
 为了确认Android应用能够兼容运行在你的 Chromebook, 首先需要安装一个官方应用来测试例如 Vine:
 https://chrome.google.com/webstore/detail/vine/plfjlfohfjjpmmifkbcmalnmcebkklkh
 
-如果你得到 `Failed to parse package name in the APK.` 的错误, 则你得为应用程序输入正确的报名. 你可以在Play Store浏览应用时通过URL地址得到报名.
+如果你得到 `Failed to parse package name in the APK.` 的错误, 则你得为应用程序输入正确的包名. 你可以在Play Store浏览应用时通过URL地址得到包名.
 
 ## 备注
 
-**This is a proof of concept. 在正规的运行时你可以马上运行支持Android 4.0或以上(可能是SDK>=15吧,测试发现这个东东自带的SDK貌似是19!!)的应用程序.
- By default the `chromeos-apk` tool replaces the Vine app. Read [the multiple apps manual](multiple-apps.md)
- to load more than one application at a time. To load unlimited number of apps read the [ARChon runtime guide](archon.md)**
+**这是一个概念的证明. 在正规的运行时你可以马上运行支持Android 4.0或以上(可能是SDK>=15吧,测试发现这个东东自带的SDK貌似是19!!)的应用程序.
+ 默认情况下用 `chromeos-apk` 工具来代替 Vine app. 阅读 [多应用手册](multiple-apps.md)
+ 以在同时运行多个应用程序. 为了加载无限量的应用请阅读 [ARChon 运行手册](archon.md)**
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -101,7 +101,7 @@ SOFTWARE.
 - IMDB - 能工作
 - Skype `com.skype.raider` - 能工作, 需要你主动键入包名在 CLI 中, 使用 `com.skype.raider`. 通过 [旧版本的 APK 5.0.0.x](http://www.androiddrawer.com/20511/download-skype-free-im-video-calls-app-apk/) 来使它工作.
 - XBMC - 初始化加载后撞车了.
-- Microsoft Remote Desktop - 这台车可能需要撞一次它才会听话.  
+- Microsoft Remote Desktop - 这台车可能需要至少撞一次它才会听话.  
 
 
 ### 作者(致敬!!)
@@ -109,3 +109,8 @@ SOFTWARE.
 | [![twitter/vladikoff](https://avatars3.githubusercontent.com/u/128755?s=70)](https://twitter.com/vladikoff "Follow @vladikoff on Twitter") |
 |---|
 | [@vladikoff](https://twitter.com/vladikoff) |
+
+## 中文化翻译
+
+Fython - (http://github.com/fython) Blog: (http://fycafe.me)
+PS:英语不是特别好 如果有哪里不对麻烦您指正 不过有些地方(比如crash翻译成撞车)的梗是故意玩的
