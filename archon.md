@@ -1,54 +1,54 @@
-# ARChon Custom Runtime Guide
+# ARChon 定制运行时手册
 
-> ARChon runtime lets you run unlimited number of Android APKs created with `chromeos-apk` on Chrome OS and across any desktop platform that supports Chrome.
+> ARChon 运行时可以让你在Chrome OS上或者其他支持Chrome浏览器的桌面操作系统运行无限数量通过 `chromeos-apk` 创建的Android应用.
 
 <img src="http://v14d.com/g/WinApk.jpg" width="350px" />
 <img src="http://v14d.com/g/multiple.png" width="350px" />
 
-## Instructions
+## 说明
 
-**Note: This can be unstable on operating systems other than Chrome OS**
+**备注: 这个可能在Chrome OS外的操作系统上表现得不稳定**
 
-**Warning: The custom runtime will replace the official runtime component. To go back to the official runtime you will need to uninstall the custom one and reinstall the official one.**
+**警告: 定制运行时会改变官方组建. 要回滚到官方组件你需要卸载定制后的应用, 然后重新安装**
 
-Tested on OS X, Windows and Ubuntu. You must have Chrome 37+ installed. (If it doesn't work try Chrome Canary).
-[OS X Note](http://www.reddit.com/r/Android/comments/2gv035/you_can_now_run_android_apps_on_chrome_for/ckmwy13): Grab the latest version of Chrome Canary, Chrome won't work because 64 bit is required by the custom runtime.
+已在OS X, Windows 和 Ubuntu测试. 你必须安装了 Chrome 37+ 的版本. (如果它无法工作请尝试Chrome金丝雀).
+[OS X 备注](http://www.reddit.com/r/Android/comments/2gv035/you_can_now_run_android_apps_on_chrome_for/ckmwy13): Grab the latest version of Chrome Canary(此处暂无翻译), Chrome 无法工作因为64位是必须的定制运行时.
 
-- Download the runtime: https://bitbucket.org/vladikoff/archon/get/v1.0.zip
-- Load it as an unpacked extension.
+- 下载运行时: https://bitbucket.org/vladikoff/archon/get/v1.0.zip
+- 以一个正在开发的扩展程序加载.
 
 <img src="http://v14d.com/g/chromeapks/howto.png" width="500px" />
-- (Try out this pre-packaged open source game: [2048-ARChon.APK](https://github.com/vladikoff/chromeos-apk/releases/download/v1.1.0/com.uberspot.a2048.android-ARChon-runtime.zip) by [Uberspot](https://github.com/uberspot/2048-android) and load it as an unpacked extension. Press "Launch", ignore warnings.)
-- To load custom applications, make sure you have `chromeos-apk@2.0.0` or higher. (Update using `npm install -g chromeos-apk@latest`). See [README.md](README.md) for more help with the `chromeos-apk` tool.
-- Create your custom APKs with the ARChon flag: `chromeos-apk com.imdb.mobile.apk --archon`.
-This will create an app directory for you.
-- Load as many APKs as you want as unpacked extensions on any platform of your choice.
+- (尝试这个打包好的开源游戏: [2048-ARChon.APK](https://github.com/vladikoff/chromeos-apk/releases/download/v1.1.0/com.uberspot.a2048.android-ARChon-runtime.zip) by [Uberspot](https://github.com/uberspot/2048-android) 然后以“正在开发的扩展程序”方式加载它. 点击 "运行", 无视错误.)
+- 为了运行自定义程序, 请确认你拥有 `chromeos-apk@2.0.0` 或者更高版本的. (通过 `npm install -g chromeos-apk@latest` 来升级). 请阅读 [README.md](README.md) 来得到更多关于 `chromeos-apk` 工具的帮助.
+- 创建你的自定义应用通过ARChon参数: `chromeos-apk com.imdb.mobile.apk --archon`.
+这样就会为你创建一个自定义目录.
+- 在任何你选择的平台上加载你想要的APK以正在开发的扩展程序.
 
 
-## Notes
+## 备注
 
-### Convert older apps created with `chromeos-apk` tool to ARChon runtime.
+### 通过 `chromeos-apk` 工具来转换旧版本APK到 ARChon 运行时.
 
-- Remove the `"key"` parameter from `manifest.json`.
+- 从 `manifest.json` 里面移除 `"key"` 字段 .
 
-### Uninstalling ARChon
+### 卸载 ARChon
 
-- Remove the component from `chrome://extensions`. Reinstall an app such as Evernote to get the official runtime on Chrome OS.
+- 从 `chrome://extensions` 移除. 在Chrome OS上重新安装官方应用来获得官方运行时(例如Evernote).
 
-### ARChon source
+### ARChon 源码
 
-ARChon source is hosted here: https://bitbucket.org/vladikoff/archon/src. It's on BitBucket because GitHub has a 100mb file limit. Feel free to hack on ARChon and tweak it. 
+ARChon 的源码托管在这: https://bitbucket.org/vladikoff/archon/src. 之所以放在 BitBucket 是因为 GitHub 有单个文件大小 100mb 限制. 无限制地研究并调教 ARChon 吧. 
 
-### Changing app resolution
+### 改变应用的分辨率
 
-Tweak the runtime in 2 places: You need to change the tablet resolution values in these 2 places: https://bitbucket.org/vladikoff/archon/src/master/gen_main.min.js and
+在运行时的两处进行调整: 你需要在这两处调整平板分辨率: https://bitbucket.org/vladikoff/archon/src/master/gen_main.min.js and
 https://bitbucket.org/vladikoff/archon/src/master/gen_index.min.js
 
-Find `tablet: {"long": 1280, "short": 800}`, tweak it, fit your resolution, reload the run time. 
+需找 `tablet: {"long": 1280, "short": 800}`, 调整它, 适配你的分辨率, 然后重新加载运行时. 
 
-### Tweak Apps
+### 调教应用们
 
-Add `"resize": "scale"` to `"arc_metadata"` in `manifest.json`.
+在`manifest.json`中增加 `"resize": "scale"` 到字段`"arc_metadata"` .
 
-Read [the manifest guide](manifest.md) for more advanced tweaks.
+请阅读 [清单指南](manifest.md) 以更高端的手段调教应用.
 
