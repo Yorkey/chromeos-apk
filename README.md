@@ -70,7 +70,7 @@ https://chrome.google.com/webstore/detail/vine/plfjlfohfjjpmmifkbcmalnmcebkklkh
 
 ## 备注
 
-**这是一个概念的证明. 在正规的运行时你可以马上运行支持Android 4.0或以上(可能是SDK>=15吧,测试发现这个东东自带的SDK貌似是19!!)的应用程序.
+**这是一个概念的证明. 在官方的运行时你可以运行四个应用程序.
  默认情况下用 `chromeos-apk` 工具来代替 Vine app. 阅读 [多应用手册](multiple-apps.md)
  以在同时运行多个应用程序. 为了加载无限量的应用请阅读 [ARChon 运行手册](archon.md)**
 
