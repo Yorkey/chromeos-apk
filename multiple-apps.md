@@ -1,15 +1,16 @@
-# Running Multiple Apps
+# 运行多个应用程序
 <img src="http://v14d.com/g/chromeapks/multiple.png" width="450px" />
 
 ***** 
 
-Currently you can load up to 4 of your favorite Android applications with the official ARC runtime.
-By default the `chromeos-apk` tool replaces the Vine application and everytime you load a different app it replaces it. However you can load 3 more apps by replacing Evernote and other apps. For each extra app adjust the `"key"` value in the `manifest.json` file of that app, then use `"Load unpacked extension..."`.
+在官方ARC运行时一般只能加载到4个你喜欢的Android应用.
+通过 `chromeos-apk` 工具替换Vine应用程序但你每次加载一个不同的应用就会替换掉它. 然而你可以通过替换配置项同时加载其它3个应用. 每个新的应用就要在新应用的文件夹中的 `manifest.json` 文件调整 `"key"` 的值, 然后使用 `"加载正在开发的扩展程序..."`.
 
-To load unlimited number of apps you need a custom runtime, see the [ARChon runtime guide](archon.md) for details.
+为了加载无限量的应用程序, 请阅读 [ARChon 运行时手册](archon.md) 获得更多细节.
 
+下面是提供给您替换的 `"key"` 键值：
 
-## Key1 - Default App Slot 
+## Key1 - 默认应用
 > MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh8HMM22e3J95V1TO1RSEF9j4eOATV+pIhGq5FFJek9l1aM9ot0B9rB25pWALNZdiW3hrgRcPR/8YGFaccFbcgneK29hnHbcbwSytdrhK2tF7iV3lbbd/FvENBODZXu3jGruWKRCtlsJgaOmA/97wpHEnn8vqkKLj4+W9kIU+dp+m9GzbB9eQijnt/7XQyJzS1YWsVZyrPaNrEibO33u+CesZ+9lSSJsvocd+r0CK+AvEY8mN27/OhNblDGLOQ/OC8L/AvEm9mU3wk11KyqS18e48XbH9Saxmsl72Z7FTcv4j/C0bqNyeJX1Ja2DMEoabuE2Jxm3vtP9jq+5UjRV1+wIDAQAB
 
 ## Key2
