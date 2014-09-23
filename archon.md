@@ -14,7 +14,18 @@
 已在OS X, Windows 和 Ubuntu测试. 你必须安装了 Chrome 37+ 的版本. (如果它无法工作请尝试Chrome金丝雀).
 [OS X 备注](http://www.reddit.com/r/Android/comments/2gv035/you_can_now_run_android_apps_on_chrome_for/ckmwy13): Grab the latest version of Chrome Canary(此处暂无翻译), Chrome 无法工作因为64位是必须的定制运行时.
 
-- 下载运行时: https://bitbucket.org/vladikoff/archon/get/v1.0.zip
+- 下载运行时:
+- 
+| ARChon 1.1 - Intel x86 **64位**   | [BitBucket](https://bitbucket.org/vladikoff/archon/get/v1.1-x86_64.zip) :: [GitHub](https://github.com/vladikoff/chromeos-apk/releases/download/v3.0.0/ARChon-v1.1-x86_64.zip)   MD5:d409801cac97cdff9ea6aad468ddc927 |
+
+| ARChon 1.1 - Intel x86 **32位**   | [BitBucket](https://bitbucket.org/vladikoff/archon/get/v1.1-x86_32.zip) :: [GitHub](https://github.com/vladikoff/chromeos-apk/releases/download/v3.0.0/ARChon-v1.1-x86_32.zip)   MD5:873c4d116eabd1a5ebedec65d11d6d8a |
+ 
+| ARChon 1.1 - ARM (基于ARM的Chromebooks专用)  | [BitBucket](https://bitbucket.org/vladikoff/archon/get/v1.1-ARM.zip) :: [GitHub](https://github.com/vladikoff/chromeos-apk/releases/download/v3.0.0/ARChon-v1.1-ARM.zip) MD5:d0a69d822399545ff67292b50f8c4047   |
+
+
+旧版:
+| ARChon 1.0 - Intel x86 64-bit | [BitBucket](https://bitbucket.org/vladikoff/archon/get/v1.0.zip) MD5:3bd2e6014a0cba0b1ee3c69462a9b46d |
+
 - 以一个正在开发的扩展程序加载.
 
 <img src="http://v14d.com/g/chromeapks/howto.png" width="500px" />
