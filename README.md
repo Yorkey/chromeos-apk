@@ -1,7 +1,7 @@
 chromeos-apk
 ======================
 
-> 在Chrome OS, OS X, Linux and Windows上运行Android软件.
+> 在Chrome OS, OS X, Linux and Windows(暂时仅支持64位)上运行Android软件.
 
 <img src="http://v14d.com/g/chromeapks/1.png" width="250px" />
 <img src="http://v14d.com/g/chromeapks/2.png" width="250px" />
@@ -11,7 +11,7 @@ chromeos-apk
 <img src="http://v14d.com/g/chromeapks/6.png" width="250px" />
 <img src="http://v14d.com/g/chromeapks/7.png" height="160px" />
 
-### 现在支持 OS X, Linux and Windows
+### 现在支持 OS X, Linux and Windows (暂时仅支持64位)
 
 <img src="http://v14d.com/g/multiple.png" width="250px" />
 <img src="http://v14d.com/g/WinApk.jpg" width="250px" />
