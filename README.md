@@ -85,6 +85,7 @@ SOFTWARE.
 ## 已测试的应用
 
 阅读 [清单手册](manifest.md) 来调教(哦不是调整)应用程序.
+Android的 `MENU菜单键` 已经绑定到 `Ctrl + ESC`
 
 - Flipboard - 能工作
 - Flixster - 能工作
